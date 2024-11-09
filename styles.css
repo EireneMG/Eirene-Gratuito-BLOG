@@ -166,25 +166,26 @@ body {
 /* Main Content Layout */
 .main-content {
   display: grid;
-  grid-template-columns: 480px 520px;
-  gap: 100px;
+  grid-template-columns: 2fr 1fr; /* Adjusted columns ratio to make sidebar smaller */
+  gap: 40px; /* Reduced gap for better alignment */
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+  
 }
 
 /* Blog Posts Layout */
 .blog-posts-container {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 0 15px;
+  margin-left: -15px;
 }
 
 .blog-post {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: white;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border: 1px solid #eee;
   cursor: pointer;
   width: 100%;
@@ -244,7 +245,7 @@ body {
 .sidebar {
   background-color: #f8eae6;
   padding: 60px;
-  width: 100%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,7 +254,7 @@ body {
 /* Newsletter & Instagram Common Styles */
 .newsletter-section,
 .instagram-section {
-  width: 350px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -267,7 +268,7 @@ body {
 }
 
 .newsletter-section h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 25px;
   line-height: 1.2;
@@ -625,7 +626,7 @@ body {
 
 /* Blog Grid Layout */
 .blog-grid-container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 60px auto;
   padding: 0 20px;
   display: grid;
@@ -645,8 +646,8 @@ body {
 
 .blog-grid-item .post-image {
   width: 100%;
-  height: auto;  /* Changed from fixed 600px */
-  aspect-ratio: 16/9;  /* Added to maintain consistent proportions */
+  height: auto;  
+  aspect-ratio: 16/9;  
   overflow: hidden;
 }
 
@@ -700,7 +701,7 @@ body {
   }
 
   .blog-grid-item .post-image {
-    height: auto;  /* Changed from fixed 300px */
+    height: auto;  
     aspect-ratio: 16/9;
   }
 
