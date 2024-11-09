@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eirene Gratuito's Blog</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="top-nav">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="site-title">Eirene Gratuito</div>
+          <ul class="nav-links ms-auto">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="food.html">Food</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Homepage Section -->
+    <div class="home-grid">
+      <div class="home-item">
+        <img
+          src="Assets/33256436-be8f-4c2f-a6bd-3717b8ebd77c.jpg"
+          alt="School"
+          class="home-image"
+        />
+      </div>
+      <div class="home-item main-photo">
+        <img 
+          src="Assets/5a62c0b8-e1ae-4d13-9294-39627ea8f2e5.jpg" 
+          alt="Myself" 
+          class="home-image" 
+        />
+        <div class="blog-headline">
+          <h1>From My Heart to the Page</h1>
+        </div>
+      </div>
+      <div class="home-item">
+        <img 
+          src="Assets/5e751bf3-ad55-4d6b-a4d8-098566c1c82c.jpg" 
+          alt="Food" 
+          class="home-image" 
+        />
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="category-container">
+      <div class="category-grid">
+        <div class="category-card">
+          <img
+            src="Assets/22a529ca-9387-478c-b18e-c1dc1a3bc456.jpg"
+            alt="Lifestyle"
+            class="category-image"
+          />
+          <div class="category-overlay lifestyle-overlay">
+            <h2 class="category-title">Lifestyle</h2>
+            <div class="divider"></div>
+            <p class="category-text">Discover my lifestyle adventures</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <img 
+            src="Assets/379557403_10230096365694239_6722679973456659015_n.jpg" 
+            alt="Family" 
+            class="category-image" 
+          />
+          <div class="category-overlay family-overlay">
+            <h2 class="category-title">Family</h2>
+            <div class="divider"></div>
+            <p class="category-text">Join me in my family moments</p>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <img 
+            src="Assets/a0b40cda-4d6f-48e9-b779-10839df5f988.jpg" 
+            alt="Food" 
+            class="category-image" 
+          />
+          <div class="category-overlay food-overlay">
+            <h2 class="category-title">Food</h2>
+            <div class="divider"></div>
+            <p class="category-text">Check out my food posts!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+      <!-- Blog Posts Column -->
+      <div class="content-column">
+        <div class="blog-posts-container">
+          <!-- Blog Post -->
+          <article class="blog-post">
+            <div class="post-image">
+              <img src="Assets/15677b9b-7a03-4109-b819-ffe843a6b70b.jpg" alt="LRT">
+            </div>
+            <div class="post-content">
+              <div class="post-meta">October 23, 2024</div>
+              <h2>Central Terminal Station</h2>
+              <p>Going home after a tiring day.</p>
+            </div>
+          </article>
+
+          <!-- Blog Post -->
+          <article class="blog-post">
+            <div class="post-image">
+              <img src="Assets/3daef133-7182-4246-a907-7068d62bcd2f.jpg" alt="Coffee">
+            </div>
+            <div class="post-content">
+              <div class="post-meta">October 19, 2024</div>
+              <h2>First time in UCC</h2>
+              <p>First time trying UCC at Alabang West Parade. Tried the coffee jelly and it was delicious.</p>
+            </div>
+          </article>
+
+          <!-- Blog Post -->
+          <article class="blog-post">
+            <div class="post-image">
+              <img src="Assets/35b55f48-be84-4eef-ae12-e8d0e23f82b6.jpg" alt="kitten">
+            </div>
+            <div class="post-content">
+              <div class="post-meta">November 8, 2024</div>
+              <h2>Our kitten, Jinx.</h2>
+              <p>Taking our kitten, Jinx to the vet.</p>
+            </div>
+          </article>
+
+          <a href="lifestyle.html" class="all-posts-btn">More Posts</a>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+          <h2>Let the posts come to you.</h2>
+          <form class="newsletter-form" aria-label="Newsletter Subscription">
+            <label for="email">Email *</label>
+            <input type="email" id="email" required>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="subscribe">
+              <label for="subscribe">Yes, subscribe me to your newsletter.</label>
+            </div>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Instagram Section -->
+        <div class="instagram-section">
+          <h3>Find me on Instagram</h3>
+          <div class="instagram-grid">
+            <div class="insta-item">
+              <img src="Assets/1ed91a2b-f167-4057-8d40-6f79ca3744e7.jpg" alt="Instagram post" />
+            </div>
+            <div class="insta-item">
+              <img src="Assets/8d675956-6991-432d-86b7-c5cc217a0b15.jpg" alt="Instagram post" />
+            </div>
+            <div class="insta-item">
+              <img src="Assets/562ee40e-44fc-45de-870e-615c2d5a8514.jpg" alt="Instagram post" />
+            </div>
+            <div class="insta-item">
+              <img src="Assets/49704584-450d-4ddd-b4ca-fa980ecaec77.jpg" alt="Instagram post" />
+            </div>
+            <div class="insta-item">
+              <img src="Assets/ac5fba6d-2a3e-4923-9740-321763d63d77.jpg" alt="Instagram post" />
+            </div>
+            <div class="insta-item">
+              <img src="Assets/c73b5468-25f0-418b-a30d-2b41292f1bc7.jpg" alt="Instagram post" />
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Eirene.Mndz/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/akosieirene/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@eirene.jen" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://github.com/EireneMG" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>About</h4>
+            <p>A lifestyle blog sharing stories about family, food, and everyday moments of my life.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="lifestyle.html">Lifestyle</a></li>
+              <li><a href="family.html">Family</a></li>
+              <li><a href="food.html">Food</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/Eirene.Mndz/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/akosieirene/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@eirene.jen" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="https://github.com/EireneMG" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Eirene Gratuito. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
