@@ -97,6 +97,9 @@ body {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: inherit
 }
 
 .category-image {
