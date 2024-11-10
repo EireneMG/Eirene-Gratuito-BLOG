@@ -42,17 +42,15 @@ body {
 .home-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 30px;
   padding: 0;
-  max-width: 70%;
+  max-width: 1200px;
   margin: 0 auto;
-  height: 30%;
 }
 
 .home-item {
   position: relative;
-  height: 100%;
-  overflow: hidden;
+  height: 400px;
 }
 
 .home-image {
@@ -63,17 +61,17 @@ body {
 
 .blog-headline {
   position: absolute;
-  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
   padding: 12px 25px;
   white-space: nowrap;
+  bottom: -80px;
 }
 
 .blog-headline h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #000;
   font-weight: 400;
   font-family: 'DM Serif Display', serif;
@@ -81,9 +79,10 @@ body {
 
 /* Category Layout Styles */
 .category-container {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 15px;
+  max-width: 800px;
+  margin: 100px auto;
+  margin-top: 150px;
+  
 }
 
 .category-grid {
@@ -167,19 +166,10 @@ body {
 /* Main Content Layout */
 .main-content {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Adjusted columns ratio to make sidebar smaller */
-  gap: 40px; /* Reduced gap for better alignment */
-  max-width: 1200px;
+  grid-template-columns: 2fr 0.5fr; 
+  max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
-  
-}
-
-/* Blog Posts Layout */
-.blog-posts-container {
-  max-width: 100%;
-  padding: 0 15px;
-  margin-left: -15px;
 }
 
 .blog-post {
@@ -213,12 +203,12 @@ body {
 
 .post-meta {
   color: #666;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
 .post-content h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
   line-height: 1.2;
@@ -226,7 +216,7 @@ body {
 
 .post-content p {
   color: #666;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   margin: 0;
 }
@@ -244,11 +234,10 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
+  grid-column: 3;  /* Place in third column */
   background-color: #f8eae6;
-  padding: 60px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
+  padding: 40px;  /* Adjusted padding */
+  width: 100%;
   align-items: center;
 }
 
